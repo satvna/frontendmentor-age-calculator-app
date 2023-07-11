@@ -1,0 +1,80 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(0, 0%, 94%);
+    color: hsl(0, 0%, 8%);
+    font-family: 'Poppins', sans-serif;
+}
+.site-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+   height: 400px;
+   width: 45%;
+   background-color: hsl(0, 0%, 100%);
+   border-radius: 15px 15px 80px 15px;
+   display: grid;
+   grid-template-rows: 25% 5% 70%;
+   box-sizing: border-box;
+    padding: 30px;
+}
+.inputs{
+    grid-row: 1/2;
+    display: flex;
+    gap: 5%;
+}
+.inputs input{
+    box-sizing: border-box;
+    width: 90px;
+    height: 45%;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 86%);
+    padding: 10px 10px 10px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.inputs label{
+    color: hsl(0, 1%, 44%);
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.divider{
+    grid-row: 2/3;
+    width: 90%;
+    height: 1px;
+    background-color: hsl(0, 0%, 86%);
+    margin-left: auto;
+    margin-right: auto;
+}
+.display{
+    grid-row: 3/4;
+    display: grid;
+    grid-template-rows: 30% 30% 30%;
+}
+.display h1 {
+    margin: 0;
+}
+.outputs{
+    display: flex;
+    gap: 5px;
+    font-size: 1.8rem;
+    font-weight: 800;
+    font-style: italic;
+    padding: 0;
+}
+.num-output{
+    color: hsl(259, 100%, 65%);
+}
+.attribution { font-size: 11px; text-align: center; position: absolute; }
+.attribution a { color: hsl(228, 45%, 44%); }
