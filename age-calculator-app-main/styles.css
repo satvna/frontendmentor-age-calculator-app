@@ -13,12 +13,13 @@ html, body{
     align-items: center;
 }
 .container{
+    position: relative;
    height: 400px;
    width: 45%;
    background-color: hsl(0, 0%, 100%);
    border-radius: 15px 15px 80px 15px;
    display: grid;
-   grid-template-rows: 25% 5% 70%;
+   grid-template-rows: 30% 70%;
    box-sizing: border-box;
     padding: 30px;
 }
@@ -50,17 +51,37 @@ html, body{
     gap: 5px;
 }
 .divider{
-    grid-row: 2/3;
+    position: absolute;
     width: 90%;
     height: 1px;
     background-color: hsl(0, 0%, 86%);
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 30px;
+    top: 120px;
+}
+.button{
+    position: absolute;
+    background-color: hsl(259, 100%, 65%);
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    right: 25px;
+    top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: hsl(0, 0%, 8%);
+}
+.button img {
+    width: 50%;
 }
 .display{
-    grid-row: 3/4;
+    grid-row: 2/3;
     display: grid;
     grid-template-rows: 30% 30% 30%;
+    margin: auto 0;
 }
 .display h1 {
     margin: 0;
