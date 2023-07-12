@@ -15,7 +15,7 @@ html, body{
 .container{
     position: relative;
    height: 400px;
-   width: 45%;
+   width: 35%;
    background-color: hsl(0, 0%, 100%);
    border-radius: 15px 15px 80px 15px;
    display: grid;
@@ -31,7 +31,7 @@ html, body{
 .inputs input{
     box-sizing: border-box;
     width: 90px;
-    height: 45%;
+    height: 40px;
     border-radius: 5px;
     border: 1px solid hsl(0, 0%, 86%);
     padding: 10px 10px 10px 10px;
@@ -39,12 +39,26 @@ html, body{
     font-size: 1rem;
     font-weight: 700;
 }
+.inputs input:focus{
+    border: 1px solid hsl(259, 100%, 65%);
+
+}
 .inputs label{
     color: hsl(0, 1%, 44%);
     font-size: 8px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
 }
+.inputs p{
+    font-size: 8px;
+    font-weight: 500;
+    font-style: italic;
+    margin: 0;
+    color: hsl(0, 100%, 67%);
+    visibility: hidden;
+
+}
+
 .input-container{
     display: flex;
     flex-direction: column;
