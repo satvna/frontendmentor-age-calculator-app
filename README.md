@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/satvna/frontendmentor-age-calculator-app/tree/main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [GitHub Pages](https://satvna.github.io/frontendmentor-age-calculator-app/)
 
 ### Built with
 
