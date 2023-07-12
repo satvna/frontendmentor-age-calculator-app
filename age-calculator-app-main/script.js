@@ -1,10 +1,12 @@
 const timeNow = new Date();
 const validated = false;
 
+/*-- Get # of days in a month --*/
 function daysInMonth(month, year) {
   return new Date(year, month, 0).getDate();
 }
 
+/*-- Functions which show & hide error messages --*/
 function styleError(errorId, inputId, labelId){
   document.getElementById(errorId).style.visibility = "visible";
   document.getElementById(inputId).style.borderColor = "hsl(0, 100%, 67%)";
@@ -12,10 +14,11 @@ function styleError(errorId, inputId, labelId){
 }
 function unStyleError(errorId, inputId, labelId){
   document.getElementById(errorId).style.visibility = "hidden";
-  document.getElementById(inputId).style.borderColor = "hsl(0, 1%, 44%)";
+  document.getElementById(inputId).style.borderColor = "hsl(0, 0%, 86%)";
   document.getElementById(labelId).style.color = "hsl(0, 1%, 44%)";
 }
 
+/*-- Check for valid inputs --*/
 function validate(day, month, year){
   //validate empty inputs
   if (day.length == 0){
@@ -79,6 +82,7 @@ function validate(day, month, year){
   return true;
 }
 
+/*-- Called on button press, date calculations --*/
 function getNewTime(){
   let day = document.getElementById('day-input').value;
   let month = document.getElementById('month-input').value;
